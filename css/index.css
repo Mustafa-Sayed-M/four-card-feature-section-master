@@ -47,7 +47,7 @@ main header p.first-desc {
     margin-bottom: 2px;
 }
 
-main header h2 {
+main header h1 {
     margin-bottom: 15px;
 }
 
@@ -88,7 +88,7 @@ main .cards .collection-cards {
 }
 
 /* Card Icon */
-main .cards .card h4.card-title {
+main .cards .card h3.card-title {
     color: var(--very-dark-blue);
 }
 
