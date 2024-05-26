@@ -1,0 +1,120 @@
+/* Variables */
+:root {
+    /* Primary */
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    /* Neutral */
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-bray: hsl(0, 0%, 98%);
+}
+
+/* Global Rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Main */
+main {
+    padding: 80px 0;
+}
+
+/* Header */
+main header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+main header p.first-desc {
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    margin-bottom: 2px;
+}
+
+main header h2 {
+    margin-bottom: 15px;
+}
+
+main header p.secondary-desc {
+    width: 450px;
+    margin: 0 auto;
+    color: var(--grayish-blue);
+}
+
+@media (max-width: 575px) {
+    main header p.secondary-desc {
+        width: fit-content;
+    }
+}
+
+/* Cards */
+main .cards {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    main .cards {
+        flex-direction: column;
+    }
+}
+
+/* Card */
+main .cards .card {
+    padding: 20px;
+    box-shadow: 0 0 20px -12px var(--blue);
+}
+
+main .cards .card,
+main .cards .collection-cards {
+    width: 100%;
+}
+
+/* Card Icon */
+main .cards .card h4.card-title {
+    color: var(--very-dark-blue);
+}
+
+main .cards .card p.card-desc {
+    margin-bottom: 40px;
+    color: var(--grayish-blue);
+}
+
+main .cards .card img {
+    width: 60px;
+    margin-left: auto;
+}
+
+main .cards .card.card-supervisor {
+    border-top: solid 2px var(--cyan);
+}
+
+main .cards .card.card-team-builder {
+    border-top: solid 2px var(--red);
+    margin-bottom: 40px;
+}
+
+main .cards .card.card-karma {
+    border-top: solid 2px var(--orange);
+}
+
+main .cards .card.card-calculator {
+    border-top: solid 2px var(--blue);
+}
