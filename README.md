@@ -1,6 +1,7 @@
 # Frontend Mentor - Four card feature section
-
-![Design preview for the Four card feature section coding challenge](./design/desktop-preview.jpg)
+<a href="https://mustafa-sayed-m.github.io/four-card-feature-section-master/">
+  <img src="./design/desktop-preview.jpg" alt="any" />
+</a>
 
 ## Welcome! 👋
 
